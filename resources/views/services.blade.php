@@ -4,10 +4,25 @@
 
 @section('content')
 <div class="container">
-    @foreach ($services as $service)
-        {{ $service->name }}
-    @endforeach
+    <table class="table table-striped table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Код</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($services as $service)
+                    <tr>
+                        <td>{{ $service->code }}</td>
+                        <td>{{ $service->name }}</td>
+                        <td>{{ $service->price }}</td>
+                    </tr>    
+                @endforeach
+            </tbody>
+    </table>
+    {{ $services->links() }}
 </div>
-
-{{ $services->links() }}    
+    
 @endsection
