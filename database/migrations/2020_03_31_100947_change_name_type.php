@@ -13,7 +13,7 @@ class ChangeNameType extends Migration
      */
     public function up()
     {
-        Schema::table('Services', function (Blueprint $table) {
+        Schema::table('services', function (Blueprint $table) {
             $table->text('name')->change();
         });
     }
@@ -25,7 +25,7 @@ class ChangeNameType extends Migration
      */
     public function down()
     {
-        Schema::table('Services', function (Blueprint $table) {
+        Schema::table('services', function (Blueprint $table) {
             $table->string('name', 75)->change();
         });
     }
