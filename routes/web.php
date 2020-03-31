@@ -23,7 +23,7 @@ Route::get('contacts', function () {
     return view('contacts');
 })->name('contacts');
 Route::get('services', function () {
-    return view('services', ['services' => App\Service::paginate(30)]);
+    return view('services', ['services' => App\Service::orderBy('code', 'desc')->paginate(30)]);
 })->name('services');
 
 
