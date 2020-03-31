@@ -43,7 +43,7 @@
     <main>
         @yield('content')
     </main>
-    <footer class="fixed-bottom bg-info">
+    <footer class="bg-info">
         <div class="d-flex justify-content-center">
             Информация и цены, представленные на сайте являются справочными и не являются публичной офертой.
         </div>
