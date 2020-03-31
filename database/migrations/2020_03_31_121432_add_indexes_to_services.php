@@ -14,7 +14,6 @@ class AddIndexesToServices extends Migration
     public function up()
     {
         Schema::table('services', function (Blueprint $table) {
-            $table->primary('id');
             $table->unique('code');
         });
     }
@@ -27,7 +26,6 @@ class AddIndexesToServices extends Migration
     public function down()
     {
         Schema::table('services', function (Blueprint $table) {
-            $table->dropPrimary(['id']);
             $table->dropUnique(['code']);
         });
     }
