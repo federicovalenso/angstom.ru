@@ -3,3 +3,6 @@ vendor
 node_modules
 storage
 bootstrap/cache
+public/images
+public/css
+public/js
