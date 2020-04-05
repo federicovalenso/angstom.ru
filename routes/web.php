@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 Route::get('doctors', function () {
-    return view('doctors');
+    return view('doctors', ['doctors' => App\Doctor::all()]);
 })->name('doctors');
 Route::get('contacts', function () {
     return view('contacts');
