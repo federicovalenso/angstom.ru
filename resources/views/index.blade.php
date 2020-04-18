@@ -5,7 +5,7 @@
 @section('content')
 <div class="container-fluid parallax parallax-main py-0 px-0">
     <div class="header-text py-5">
-        <h1 class="text-center py-5 my-5 display-1 text-primary">ООО "Стоматология"</h1>
+        <h1 class="text-center py-5 my-5 display-1 text-primary">ООО "СТОМАТОЛОГИЯ"</h1>
         <h3 class="text-center py-5 display-3 text-success">Мы работаем для вас!</h3>
     </div>
 </div>
